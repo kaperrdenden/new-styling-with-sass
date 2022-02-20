@@ -16,9 +16,14 @@ function App() {
         <Button size="small" color="gray">BUTTON</Button>
       </div>
       <div className='buttons'>
-      <Button size="large" color="pink">BUTTON</Button>
-      <Button color="pink">BUTTON</Button>
-      <Button size="small" color="pink">BUTTON</Button>
+        <Button size="large" color="pink">BUTTON</Button>
+        <Button color="pink">BUTTON</Button>
+        <Button size="small" color="pink">BUTTON</Button>
+      </div>
+      <div className='buttons'>
+        <Button size='large' color="blue" outline>BUTTON</Button>
+        <Button color="gray" outline>BUTTON</Button>
+        <Button size='small' color="pink" outline>BUTTON</Button>
       </div>
     </div>
   );
