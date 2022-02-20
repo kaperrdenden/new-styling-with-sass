@@ -1,4 +1,6 @@
 $blue: #222be6; // 주석 선언
+$gray: #495057;
+$pink: #f06595;
 
 .Button {
   display: inline-block;
@@ -31,12 +33,39 @@ $blue: #222be6; // 주석 선언
     padding-right: 1rem;
   }
 
-  background-color: $blue;
-  &:hover {
-    background-color: lighten($blue, 10%);
+  // 색상관리
+  &.blue {
+    background-color: $blue;
+    &.hover {
+      background-color: lighten($blue, 10%);
+    }
+    &:active {
+      background-color: darken($blue, 10%);
+    }
   }
 
-  &:active {
-    background-color: darken($blue, 10%);
+  &.gray {
+    background-color: $gray;
+    &:hover {
+      background: lighten($gray, 10%);
+    }
+    &:active {
+      background-color: darken($gray, 10%);
+    }
+  }
+
+  &.pink {
+    background-color: $pink;
+    &:hover {
+      background: lighten($pink, 10%);
+    }
+    &:active {
+      background-color: darken($pink, 10%);
+    }
+  }
+
+  // 여기서 & + &는 .Button + .Button
+  & + & {
+    margin-left: 1rem;
   }
 }
